@@ -1,0 +1,36 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row">
+    <div class="col-7 offset-2 mt-3 mb-5">
+        <h3>Confirm Your Booking</h3>
+        <form method="post" action="/bookings"  novalidate class="needs-validation">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-md-4">
+                  <label for="checkIn" class="form-label">CheckIN</label>
+                  <input type="date" class="form-control" name="checkIn" required>
+                </div>
+                <div class="mb-3 col-md-4">
+                  <label for="checkOut" class="form-label">CheckOut</label>
+                  <input type="date" class="form-control" name="checkOut" required>
+                </div>
+                <div class="mb-3 col-md-4">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="number" class="form-control" name="phone" required>
+                </div>
+                <div class="mb-3 col-md-4">
+                  <label for="guest" class="form-label">Guests</label>
+                  <input type="number" class="form-control" name="guest" required>
+                </div>
+            </div>
+            
+            <button class="btn btn-dark add-btn">Reserve</button>
+        </form>
+    </div>
+</div>

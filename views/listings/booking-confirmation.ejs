@@ -1,0 +1,14 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="mt-3">
+    <h2>Your Booking</h2>
+    <p>Thank you for your booking, <b><%= booking.name %>.</b></p>
+    <p>Booking Details:</p>
+    <ul>
+        <li>Email: <%= booking.email %></li>
+        <li>Check-In Date: <%= booking.checkInDate.toDateString() %></li>
+        <li>Check-Out Date: <%= booking.checkOutDate.toDateString() %></li>
+        <li>Phone: <%= booking.phone %></li>
+        <li>Guests: <%= booking.guests %></li>
+    </ul>
+</div>
